@@ -50,7 +50,7 @@ const UsersLists = () => {
 
 
                                 users.map((user, index) => {
-                                    const { id, name, picture } = user;
+                                    const { id, name } = user;
 
                                     return (
                                         <tr className="table table-borderless" >
