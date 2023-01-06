@@ -97,7 +97,7 @@ const ShowTask = () => {
                                             <td className="text-dark"> {created_on}</td>
                                             <td className="text-dark"> {assigned_name}</td>
                                             <td className="text-dark"> {assigned_to}</td>
-                                            <td className={`${priority == 1 ? 'text-success' : priority == 2 ? 'text-warning' : 'text-danger'}  `}> {priority == 1 ? "High" : priority == 2 ? "Medium" : "Low"}</td>
+                                            <td className={`${priority === '1' ? 'text-success' : priority === '2' ? 'text-warning' : 'text-danger'}  `}> {priority === '1' ? "High" : priority === '2' ? "Medium" : "Low"}</td>
                                             <td><button onClick={() => handleEdit(id)} className='btn btn-info'>Edit</button></td>
                                             <td><button onClick={() => handleDlete(id)} className='btn btn-danger'>Delete</button></td>
 
